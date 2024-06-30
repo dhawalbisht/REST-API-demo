@@ -26,6 +26,8 @@ app.use((req,res, next)=>{
 
 // for json data task 1
 app.get('/api/user',(req,res)=>{
+    // custom headers
+    res.setHeader("X-MyName","dhawal")
     return res.json(users)
 })
 
